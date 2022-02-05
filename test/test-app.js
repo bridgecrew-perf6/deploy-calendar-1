@@ -1,6 +1,6 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import Greeter from "../src/greeter"
+import App from "../src/app"
 
 class MockCalc {
 
@@ -10,11 +10,11 @@ class MockCalc {
 
 }
 
-describe("Greeter should", () => {
+describe("App should", () => {
 
 	test("return greeting", () => {
 		const component = renderer.create(
-			<Greeter calc={new MockCalc()}/>
+			<App calc={new MockCalc()}/>
 		)
 		expect(component.toJSON()).toMatchSnapshot()
 		component.unmount()

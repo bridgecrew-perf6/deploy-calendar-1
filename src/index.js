@@ -4,8 +4,7 @@ import "bootstrap"
 import React from "react"
 import ReactDOM from "react-dom"
 
-import Greeter from "./greeter"
-import Calc from "./calc"
+import App from "./app"
 
 
-ReactDOM.render(<Greeter calc={new Calc()}/>, document.getElementById("app"))
+ReactDOM.render(<App/>, document.getElementById("app"))

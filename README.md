@@ -1,4 +1,4 @@
-# react-bootstrap-template
+# deploy-calendar
 Template for Vue.js and Bootstrap application
 
 - React 17
@@ -9,8 +9,8 @@ Template for Vue.js and Bootstrap application
 
 ### Clone
 ```sh
-git clone https://github.com/timmson/react-bootstrap-template.git
-cd react-bootstrap-template
+git clone https://github.com/timmson/deploy-calendar.git
+cd deploy-calendar
 ```
 
 ### Install dependencies

@@ -1,0 +1,290 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should return greeting 1`] = `
+<div
+  className="container"
+  id="app"
+>
+  <h2
+    className="text-center"
+  >
+    Когда лучше деплоить на продакшн
+  </h2>
+  <div
+    className="row"
+  >
+    <div
+      className="col"
+    >
+      <table
+        className="table text-center border border-dark"
+      >
+        <thead>
+          <tr>
+            <td>
+              Знак Зодиака
+            </td>
+            <td
+              className="table-success"
+            >
+              Благоприятные дни
+            </td>
+            <td
+              className="table-warning"
+            >
+              Нейтральные дни
+            </td>
+            <td
+              className="table-danger"
+            >
+              Неблагоприятные дни
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Овен (с 21 марта по 20 апреля)
+            </td>
+            <td
+              className="table-success"
+            >
+              2, 3, 12, 13, 16, 17, 22, 23, 25, 27
+            </td>
+            <td
+              className="table-warning"
+            >
+              1, 8, 18, 21, 24, 26, 28
+            </td>
+            <td
+              className="table-danger"
+            >
+              4, 5, 6, 7, 9, 10, 11, 14, 15, 19, 20
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Телец (с 21 по 21 мая)
+            </td>
+            <td
+              className="table-success"
+            >
+              1, 8, 10, 12, 19, 23, 27
+            </td>
+            <td
+              className="table-warning"
+            >
+              3, 5, 7, 9, 11, 14, 16, 22, 24
+            </td>
+            <td
+              className="table-danger"
+            >
+              2, 4, 6, 13, 15, 17, 18, 20, 21, 25, 26, 28
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Близнецы (с 22 мая по 21 июня)
+            </td>
+            <td
+              className="table-success"
+            >
+              5, 6, 14, 19, 20, 21, 25, 27
+            </td>
+            <td
+              className="table-warning"
+            >
+              1, 3, 7, 8, 12, 13, 15, 17, 18, 22, 26
+            </td>
+            <td
+              className="table-danger"
+            >
+              2, 4, 9, 10, 11, 16, 23, 24, 28
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Рак (с 22 июня по 22 июля)
+            </td>
+            <td
+              className="table-success"
+            >
+              5, 11, 15, 18, 20, 22
+            </td>
+            <td
+              className="table-warning"
+            >
+              1, 2, 6, 12, 21
+            </td>
+            <td
+              className="table-danger"
+            >
+              3, 4, 7, 8, 9, 10, 13, 14, 16, 17, 19, 23, 24, 25, 26, 27, 28
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Лев (с 23 июля по 21 августа)
+            </td>
+            <td
+              className="table-success"
+            >
+              3, 7, 8, 9, 10, 14, 15, 16, 17, 24, 26, 28
+            </td>
+            <td
+              className="table-warning"
+            >
+              1, 2, 5, 13, 19, 20, 23, 25
+            </td>
+            <td
+              className="table-danger"
+            >
+              4, 6, 11, 12, 18, 21, 22, 27
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Дева (с 22 августа по 23 сентября)
+            </td>
+            <td
+              className="table-success"
+            >
+              2, 4, 8, 9, 10, 12, 18, 19, 27
+            </td>
+            <td
+              className="table-warning"
+            >
+              5, 6, 11, 13, 14, 16, 17, 20, 22, 26, 28
+            </td>
+            <td
+              className="table-danger"
+            >
+              1, 3, 7, 15, 21, 23, 24, 25
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Весы (с 24 сентября по 23 октября)
+            </td>
+            <td
+              className="table-success"
+            >
+              3, 5, 6, 7, 12, 14, 17, 24, 28
+            </td>
+            <td
+              className="table-warning"
+            >
+              1, 10, 11, 13, 15, 16, 18, 19, 21, 23, 25, 27
+            </td>
+            <td
+              className="table-danger"
+            >
+              2, 4, 8, 9, 20, 22, 26
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Скорпион (с 24 октября по 22 ноября)
+            </td>
+            <td
+              className="table-success"
+            >
+              2, 10, 13, 14, 16, 20, 25, 27
+            </td>
+            <td
+              className="table-warning"
+            >
+              3, 9, 12, 17, 18, 22, 23, 24, 28
+            </td>
+            <td
+              className="table-danger"
+            >
+              1, 4, 5, 6, 7, 8, 11, 15, 19, 21, 26
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Стрелец (с 23 ноября по 22 декабря)
+            </td>
+            <td
+              className="table-success"
+            >
+              1, 4, 5, 13, 21, 25
+            </td>
+            <td
+              className="table-warning"
+            >
+              3, 9, 11, 12, 16, 18, 19, 20, 23, 24, 26
+            </td>
+            <td
+              className="table-danger"
+            >
+              2, 6, 7, 8, 10, 14, 15, 17, 22, 27, 28
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Козерог (с 23 декабря по 20 января)
+            </td>
+            <td
+              className="table-success"
+            >
+              4, 7, 8, 10, 11, 13, 15, 18, 20, 25, 27
+            </td>
+            <td
+              className="table-warning"
+            >
+              2, 3, 5, 9, 12, 14, 16, 19, 23, 26
+            </td>
+            <td
+              className="table-danger"
+            >
+              1, 6, 17, 21, 22, 24, 28
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Водолей (с 21 января по 19 февраля)
+            </td>
+            <td
+              className="table-success"
+            >
+              1, 2, 4, 6, 10, 12, 13, 14, 18, 22, 24, 26, 27, 28
+            </td>
+            <td
+              className="table-warning"
+            >
+              5, 7, 17, 19
+            </td>
+            <td
+              className="table-danger"
+            >
+              3, 8, 9, 11, 15, 16, 20, 21, 23, 25
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Рыбы (с 20 февраля по 20 марта)
+            </td>
+            <td
+              className="table-success"
+            >
+              1, 2, 10, 16, 22, 23, 24, 27
+            </td>
+            <td
+              className="table-warning"
+            >
+              4, 5, 6, 7, 8, 9, 11, 13, 14, 17, 18, 19, 28
+            </td>
+            <td
+              className="table-danger"
+            >
+              3, 12, 15, 20, 21, 25, 26
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
