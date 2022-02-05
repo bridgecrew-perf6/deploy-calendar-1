@@ -68,23 +68,23 @@ export default function App() {
 				<div className="col">
 					<table className="table text-center border border-dark">
 						<thead>
-						<tr>
-							<td>
+							<tr>
+								<td>
 								Знак Зодиака
-							</td>
-							<td className="table-success">
+								</td>
+								<td className="table-success">
 								Благоприятные дни
-							</td>
-							<td className="table-warning">
+								</td>
+								<td className="table-warning">
 								Нейтральные дни
-							</td>
-							<td className="table-danger">
+								</td>
+								<td className="table-danger">
 								Неблагоприятные дни
-							</td>
-						</tr>
+								</td>
+							</tr>
 						</thead>
 						<tbody>
-						{zodiacs}
+							{zodiacs}
 						</tbody>
 					</table>
 				</div>

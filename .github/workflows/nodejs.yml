@@ -21,7 +21,7 @@ jobs:
       run: |
         npm i
         npm run lint
-        npm run coverage
+# npm run coverage
         npm run prod
       env:
         CI: true
