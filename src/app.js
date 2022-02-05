@@ -1,64 +1,33 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Ноябрь", "Декабрь"]
-
-
-const zodiacsAndMonths = [
-	{title: "♈", dates: "21 марта - 20 апреля"},
-	{title: "♉", dates: "21 апреля - 21 мая"},
-	{title: "♊", dates: "22 мая - 21 июня"},
-	{title: "♋", dates: "22 июня - 22 июля"},
-	{title: "♌", dates: "23 июля - 21 августа"},
-	{title: "♍", dates: "22 августа - 23 сентября"},
-	{title: "♎", dates: "24 сентября - 23 октября"},
-	{title: "♏", dates: "24 октября - 22 ноября"},
-	{title: "♐", dates: "23 ноября - 22 декабря"},
-	{title: "♑", dates: "23 декабря - 20 января"},
-	{title: "♒", dates: "21 января - 19 февраля"},
-	{title: "♓", dates: "20 февраля - 20 марта"}
-]
-
-function randomIntFromInterval(length) {
-	return Math.floor(Math.random() * length)
-}
-
-function generate(date) {
-	const daysInCurrentMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate()
-	const days = [...Array(daysInCurrentMonth + 1).keys()].slice(1, daysInCurrentMonth + 1)
-
-	const types = [[], [], []]
-	days.forEach((day) => types[randomIntFromInterval(types.length)].push(day))
-	return types
-}
+import Zodiac from "./zodiac"
+import getDates from "./get-dates"
 
 
-export default function App() {
 
-	const date = new Date()
-
-	const zodiacs = zodiacsAndMonths.map((zodiac) => {
-		const [success, warning, danger] = generate(date)
-		return (<div key={zodiac.title} className="row mx-1 text-center">
-			<div className="col-3 border border-dark">
-				<p className={"fw-bold fs-1"}>{zodiac.title}</p>
-				<p>({zodiac.dates})</p>
-			</div>
-			<div className="col-3 bg-success text-light border border-dark">{success.join(", ")}</div>
-			<div className="col-3 bg-warning text-dark border border-dark">{warning.join(", ")}</div>
-			<div className="col-3 bg-danger text-light border border-dark">{danger.join(", ")}</div>
-		</div>)
-	})
+export default function App(props) {
 
 	return (
-		<div id="app" className="container">
-			<h2 className="text-center">Когда лучше деплоить на продакшн, {months[date.getMonth()]} {date.getFullYear()} г.</h2>
-			<div className="row mx-1 text-center">
-				<div className="col-3 border border-dark">Знак Зодиака</div>
+		<div id="app" className="container text-center">
+			<h2>Когда лучше деплоить на продакшн, {props.month}<sup>*</sup></h2>
+			<p>* - Астрологический прогноз благоприятных дат для дежурного администратора</p>
+			<div className="row mx-1">
+				<div className="col-3 border border-dark">Знак</div>
 				<div className="col-3 bg-success text-light border border-dark">Супер</div>
 				<div className="col-3 bg-warning text-dark border border-dark">Можно</div>
 				<div className="col-3 bg-danger text-light border border-dark">Не стоит</div>
 			</div>
-			{zodiacs}
+			{
+				props.zodiacsAndMonths.map((zodiac) =>
+					<Zodiac key={zodiac.title} title={zodiac.title} range={zodiac.dates} dates={getDates(props.date)}/>)
+			}
 		</div>
 	)
+}
+
+App.propTypes = {
+	date: PropTypes.object.isRequired,
+	month: PropTypes.string.isRequired,
+	zodiacsAndMonths: PropTypes.array.isRequired
 }
